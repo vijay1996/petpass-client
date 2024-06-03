@@ -1,6 +1,6 @@
 FROM node:alpine
 
-RUN npm install
-RUN npm run build
+CMD npm install
+CMD npm run build
 
-COPY ./build/ .
+COPY ./public/ .
